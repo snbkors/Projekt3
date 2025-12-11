@@ -21,7 +21,7 @@ body {
     align-items: center;
     list-style: none;
     position: relative;
-    background-color: rgb(201, 150, 124);
+    background-color: #caac9d;
     padding: 12px 20px;
 }
 
@@ -57,7 +57,7 @@ body {
     transition: 0.15s ease-in-out;
 }
 
-.menu li a:hover:after {
+.menu li a:hover::after {
     width: 100%;
 }
 
@@ -71,13 +71,13 @@ body {
 }
 
 .open-menu {
-    top: 50%;
+    top: 30px;
     right: 20px;
-    transform: translateY(-50%);
+    translate: translateY(-50%);
 }
 
 .close-menu {
-    top: 20px;
+    top: 30px;
     right: 20px;
 }
 
@@ -90,30 +90,32 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 60%;
         height: 100vh;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: rgb(201, 150, 124);
+        background-color: #caac9d;
         transition: all 0.2s ease-in-out;
+        font-size: large;
     }
-}
 
-.menu li {
-    margin-top: 40px;
-}
+    .menu li {
+        margin-top: 40px;
+    }
 
-.menu li a {
-    padding: 30px;
-}
+    .menu li a {
+        padding: 30px;
+    }
 
-.open-menu,
-.close-menu {
-    display: block;
-}
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
 
-#check:checked~.menu {
-    right: 0;
+    #check:checked~.menu {
+        right: 0;
+
+    }
 }
