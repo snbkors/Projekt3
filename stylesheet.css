@@ -25,8 +25,8 @@ body {
     padding: 12px 20px;
 }
 
-.nav-bar .logo img {
-    width: 40px;
+.logo img {
+    width: 50px;
 }
 
 .menu {
@@ -35,7 +35,6 @@ body {
 
 .menu li {
     padding-left: 30px;
-    ;
 }
 
 .menu li a {
@@ -58,11 +57,12 @@ body {
     transition: 0.15s ease-in-out;
 }
 
-.menu li a::after:hover {
+.menu li a:hover:after {
     width: 100%;
 }
 
-.open-menu.close-menu {
+.open-menu,
+.close-menu {
     position: absolute;
     color: #482F04;
     cursor: pointer;
@@ -81,21 +81,39 @@ body {
     right: 20px;
 }
 
-/* Desktop */
-.nav-bar {
-    display: flex;
+#check {
+    display: none;
 }
 
-/* Phone / small */
-@media (min-width: 768px) {
-    .nav-bar {
-        display: none;
-        /* hide menu items */
+@media(max-width: 610px) {
+    .menu {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(201, 150, 124);
+        transition: all 0.2s ease-in-out;
     }
 }
 
-.menu {
+.menu li {
+    margin-top: 40px;
+}
+
+.menu li a {
+    padding: 30px;
+}
+
+.open-menu,
+.close-menu {
     display: block;
-    /* show hamburger */
+}
+
+#check:checked~.menu {
+    right: 0;
 }
