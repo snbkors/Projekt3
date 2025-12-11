@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #ECDCD0;
     color: #482F04;
@@ -20,10 +26,29 @@ header {
     height: max-content;
 }
 
-.navbar {
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-align: center;
+    transition: 0.15s ease-in-out;
 }
 
 nav ul {
@@ -41,4 +66,9 @@ header img {
     object-fit: cover;
     object-position: center;
     padding: 5%;
+}
+
+.logo {
+    width: auto;
+    height: auto;
 }
