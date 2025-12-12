@@ -127,7 +127,7 @@ body {
 
 main {
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -162,7 +162,134 @@ hr {
     margin: 5px 0;
 }
 
-@media (min-width:611px) and (max-width: 2000px) {
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #ECDCD0;
+}
+
+.about-text {
+    max-width: 60%;
+    /* keeps text on the left */
+}
+
+.about-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    color: #4a341c;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #4a341c;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.cta-btn {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ECDCD0;
+    background-color: #777B1B;
+    border-radius: 1px;
+    transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Responsive (stack on mobile) */
+@media (max-width: 610px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    h3 {
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
+    }
+}
+
+.project-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #e6d6ca;
+}
+
+.project-text {
+    max-width: 60%;
+    /* keeps text on the left */
+}
+
+.project-text h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    color: #4a341c;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
+.project-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #4a341c;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.cta-btn1 {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ECDCD0;
+    background-color: #777B1B;
+    border-radius: 1px;
+    transition: transform 0.2s ease;
+}
+
+.cta-btn1:hover {
+    transform: translateY(-4px);
+}
+
+/* Responsive (stack on mobile) */
+@media (max-width: 610px) {
+    .project-section {
+        flex-direction: column;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .project-text {
+        max-width: 100%;
+    }
+
+    h4 {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
+    }
+}
+
+@media (min-width:611px) and (max-width: 4000px) {
     h1 {
         font-size: 4.5rem;
     }
@@ -178,24 +305,15 @@ hr {
     }
 }
 
-@media (max-width: 610px) {
-    h3 {
-        font-size: 1.5rem;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-left: 10px;
-    }
-
-    p {
-        font-size: 1.0rem;
-        margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 30px;
-    }
-}
-
 @media (min-width:611px) and (max-width: 2000px) {
     h3 {
+        font-size: 3.0rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    h4 {
         font-size: 3.0rem;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -208,5 +326,6 @@ hr {
         padding-left: 10px;
         padding-right: 50px;
         text-align: left;
+        padding-right: 100px;
     }
 }
