@@ -387,3 +387,85 @@ hr {
         margin-right: 0rem;
     }
 }
+
+.aboutme-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.aboutme-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.aboutme-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutme-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 610px) {
+    .aboutme-layout {
+        flex-direction: column;
+    }
+
+    .aboutme-image {
+        order: 1;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .aboutme-text {
+        order: 2;
+        text-align: left;
+    }
+
+    .aboutme-image img {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+.programs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+@media (max-width: 610px) {
+    .programs-image {
+        max-width: 200px;
+    }
+
+    .programs-section h3 {
+        font-size: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 611px) {
+    .programs-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .programs-image {
+        max-width: 300px;
+    }
+}
