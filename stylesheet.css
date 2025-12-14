@@ -393,8 +393,8 @@ hr {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 40px 20px;
-    max-width: 1200px;
+    padding: 20px 20px;
+    max-width: flex;
     margin: auto;
 }
 
@@ -432,11 +432,29 @@ hr {
     .aboutme-text {
         order: 2;
         text-align: left;
+        font-size: medium;
     }
 
     .aboutme-image img {
-        max-width: 250px;
+        max-width: 200px;
         width: 100%;
+    }
+}
+
+@media (min-width: 611px) {
+    .aboutme-text {
+        font-size: 1.5rem;
+    }
+
+    .aboutme-image {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .aboutme-text {
+        text-align: left;
+        max-width: fit-content;
+        padding-left: 10px;
     }
 }
 
@@ -468,4 +486,34 @@ hr {
     .programs-image {
         max-width: 300px;
     }
+}
+
+.projects-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 20px;
+    max-width: flex;
+    margin: auto;
+}
+
+.projects-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.projects-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 4px;
 }
