@@ -173,10 +173,13 @@ main {
 }
 
 hr {
-    border: none;
-    height: 1px;
-    background-color: #482F04;
-    margin: 5px 0;
+    hr {
+        border: none;
+        height: 1px;
+        color: #482F04;
+        margin: 0;
+        pointer-events: none;
+    }
 }
 
 .about-section {
@@ -270,6 +273,12 @@ hr {
     margin: 0 0 20px 10px;
 }
 
+.cta-btn,
+.cta-btn1 {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
 .cta-btn1 {
     padding: 10px 30px;
     text-decoration: none;
@@ -281,8 +290,9 @@ hr {
     transition: transform 0.2s ease;
 }
 
-.cta-btn1:hover {
+.cta-btn1 :hover {
     transform: translateY(-4px);
+
 }
 
 @media (max-width: 610px) {
@@ -300,9 +310,6 @@ hr {
         font-size: x-large;
         font-weight: lighter;
         font-style: normal;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
     }
 
     .project-text p {
@@ -310,7 +317,7 @@ hr {
     }
 }
 
-@media (min-width:611px) and (max-width: 4000px) {
+@media (min-width:611px) {
     h1 {
         font-size: 4.5rem;
     }
@@ -351,8 +358,6 @@ hr {
     color: #3a2c1e;
     font-size: 0.95rem;
     position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
