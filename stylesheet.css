@@ -251,7 +251,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    background-color: #e6d6ca;
+    background-color: #ECDCD0;
 }
 
 .project-text {
@@ -370,6 +370,10 @@ hr {
     line-height: 1.4;
 }
 
+hr {
+    border: 1px solid #482F04;
+}
+
 @media (max-width: 600px) {
     .footer-left {
         text-align: left;
@@ -476,19 +480,7 @@ hr {
     width: 100%;
 }
 
-.portrait-pair {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    width: 100%;
-    margin-bottom: 20px;
-}
 
-.portrait-pair img {
-    width: 100%;
-    max-width: 45%;
-    height: auto;
-}
 
 @media (max-width: 610px) {
     .programs-image {
