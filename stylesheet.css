@@ -88,7 +88,6 @@ body {
 .open-menu {
     top: 30px;
     right: 20px;
-    translate: translateY(-50%);
     position: absolute;
     z-index: 1001;
 }
@@ -145,8 +144,6 @@ main {
     text-align: left;
     padding: 10px 10px;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     font-size: xx-large;
     overflow: auto;
@@ -169,16 +166,6 @@ main {
         font-size: 1.0rem;
         color: #097CA7;
         font-weight: lighter;
-    }
-}
-
-hr {
-    hr {
-        border: none;
-        height: 1px;
-        color: #482F04;
-        margin: 0;
-        pointer-events: none;
     }
 }
 
@@ -488,7 +475,6 @@ hr {
     }
 
     .programs-section h3 {
-        font-size: auto;
         margin-bottom: 20px;
     }
 
@@ -643,7 +629,6 @@ hr {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    max-width: auto;
     margin: 3rem auto;
     padding: 0 1.5rem;
 }
@@ -727,7 +712,6 @@ form textarea {
     }
 
     .contact-text {
-        display: fit-content;
         padding-right: 2rem;
         line-height: 3.0rem;
         font-size: 1.5rem;
